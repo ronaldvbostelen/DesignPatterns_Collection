@@ -42,5 +42,7 @@ namespace StatePattern
             Console.WriteLine("A gumball comes rolling out the slot..");
             if (Gumballs > 0) --Gumballs;
         }
+
+        public string GetState() => State.ToString();
     }
 }

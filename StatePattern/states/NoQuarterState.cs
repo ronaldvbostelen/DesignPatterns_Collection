@@ -5,7 +5,7 @@ namespace StatePattern
 {
     public class NoQuarterState : GumballMachineState, IState
     {
-        public NoQuarterState(GumBallMachine gumBallMachine) : base(gumBallMachine)
+        public NoQuarterState(GumBallMachine gumBallMachine) : base(gumBallMachine,"No Quarter-state")
         {
         }
 

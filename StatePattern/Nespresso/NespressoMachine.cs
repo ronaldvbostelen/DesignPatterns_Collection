@@ -48,6 +48,7 @@ namespace StatePattern.Nespresso
         {
             WaterAmount = waterAmount;
             CupsInBin = cupsInBin;
+            HandleDown = true;
 
             CoffeeMakingState = new CoffeeMakingState(this);
             CupState = new CupState(this);
@@ -80,7 +81,6 @@ namespace StatePattern.Nespresso
             Console.WriteLine("Coffee starts dripping out...");
             Thread.Sleep(5000);
             WaterAmount -= WaterPerCup;
-            ++CupsInBin;
             Console.WriteLine("Done.. Enjoy");
         }
     }

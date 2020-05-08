@@ -9,6 +9,8 @@ namespace SingletonPattern
             var prefs = UserPreference.GetInstance();
 
             Console.WriteLine(prefs.SayWhat);
+
+
         }
     }
 }

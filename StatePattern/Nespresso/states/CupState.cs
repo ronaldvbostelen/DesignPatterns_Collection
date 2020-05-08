@@ -19,12 +19,19 @@ namespace StatePattern.Nespresso.states
         {
             base.TurnHandle();
 
-            if (!nespressoMachine.HandleDown && ++nespressoMachine.CupsInBin == nespressoMachine.MaxAmountCupsInBin)
+            if (!nespressoMachine.HandleDown)
             {
-                Console.WriteLine("Bin is full");
-                nespressoMachine.CurrentState = nespressoMachine.FullBinState;
+                nespressoMachine.CupsInBin++;
+                if (nespressoMachine.CupsInBin == nespressoMachine.MaxAmountCupsInBin)
+                {
+                    Console.WriteLine("Bin is full");
+                    nespressoMachine.CurrentState = nespressoMachine.FullBinState;
+                }
+                else
+                {
+                    nespressoMachine.CurrentState = nespressoMachine.NoCupState;
+                }
             }
-            
         }
 
         public override void PressButton()

@@ -7,7 +7,7 @@ namespace StatePattern
 {
     class SoldOutState : GumballMachineState, IState
     {
-        public SoldOutState(GumBallMachine gumBallMachine) : base(gumBallMachine)
+        public SoldOutState(GumBallMachine gumBallMachine) : base(gumBallMachine,"Sold Out-state")
         {
         }
 

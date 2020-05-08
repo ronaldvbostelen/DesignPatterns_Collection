@@ -9,7 +9,7 @@ namespace StatePattern
     {
         private Random random = new Random();
 
-        public HasQuarterState(GumBallMachine gumBallMachine) : base(gumBallMachine)
+        public HasQuarterState(GumBallMachine gumBallMachine) : base(gumBallMachine,"Has Quarter-state")
         {
         }
 

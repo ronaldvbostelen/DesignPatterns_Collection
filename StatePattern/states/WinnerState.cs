@@ -5,7 +5,7 @@ namespace StatePattern
 {
     public class WinnerState : GumballMachineState, IState
     {
-        public WinnerState(GumBallMachine gumBallMachine) : base(gumBallMachine)
+        public WinnerState(GumBallMachine gumBallMachine) : base(gumBallMachine,"Winner-state")
         {
         }
 
