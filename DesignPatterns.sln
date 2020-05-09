@@ -29,11 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacadePattern", "FacadePatt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatePattern", "StatePattern\StatePattern.csproj", "{F9A12C76-EAAB-4FAC-AAFB-D1EC3C9DB4EA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyPattern", "ProxyPattern\ProxyPattern.csproj", "{2297D3BD-7395-47A0-A4A3-7F3EBDFADAA8}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualProxy", "VirtualProxy\VirtualProxy.csproj", "{79FD7610-FAF5-4887-8151-72BC0D29C79D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPattern", "BuilderPattern\BuilderPattern.csproj", "{6E056FDA-ADAF-404A-8B2E-87E59AC728B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectionProxy", "ProtectionProxy\ProtectionProxy.csproj", "{F9362EA8-D364-4EF7-A3DC-3B3653CF53ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,10 +93,6 @@ Global
 		{F9A12C76-EAAB-4FAC-AAFB-D1EC3C9DB4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9A12C76-EAAB-4FAC-AAFB-D1EC3C9DB4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9A12C76-EAAB-4FAC-AAFB-D1EC3C9DB4EA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2297D3BD-7395-47A0-A4A3-7F3EBDFADAA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2297D3BD-7395-47A0-A4A3-7F3EBDFADAA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2297D3BD-7395-47A0-A4A3-7F3EBDFADAA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2297D3BD-7395-47A0-A4A3-7F3EBDFADAA8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{79FD7610-FAF5-4887-8151-72BC0D29C79D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{79FD7610-FAF5-4887-8151-72BC0D29C79D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79FD7610-FAF5-4887-8151-72BC0D29C79D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -105,6 +101,10 @@ Global
 		{6E056FDA-ADAF-404A-8B2E-87E59AC728B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E056FDA-ADAF-404A-8B2E-87E59AC728B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E056FDA-ADAF-404A-8B2E-87E59AC728B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9362EA8-D364-4EF7-A3DC-3B3653CF53ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9362EA8-D364-4EF7-A3DC-3B3653CF53ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9362EA8-D364-4EF7-A3DC-3B3653CF53ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9362EA8-D364-4EF7-A3DC-3B3653CF53ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
