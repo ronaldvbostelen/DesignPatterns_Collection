@@ -5,17 +5,10 @@ using System.Text;
 
 namespace AdapterPattern.EnumeratorToIterator
 {
-    class CarCatlog : IEnumerable<Car>
+    class CarCatlog : IIterable<Car>
     {
-        public List<Car> CarModels { get; set; }
-
-        public IEnumerator<Car> GetEnumerator() => new CarEnumerator(CarModels);
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
-
-        public IIterator<Car> GetIterator() => new EnumeratorIterator(new CarEnumerator(CarModels));
+        public IList<Car> CarModels { get; set; }
+        
+        public IIterator<Car> GetIterator() => new EnumeratorIterator<Car>(CarModels.GetEnumerator());
     }
 }

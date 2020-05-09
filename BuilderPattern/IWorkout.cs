@@ -12,6 +12,6 @@
         void AddTricepsDips();
         void AddLunge();
         void AddSideBridge();
-        FitnessScheme GetScheme();
+        IScheme GetScheme();
     }
 }

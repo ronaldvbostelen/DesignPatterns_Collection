@@ -3,9 +3,11 @@ using System.Text;
 
 namespace BuilderPattern
 {
-    public class FitnessScheme
+    public class FitnessScheme : IScheme
     {
-        public List<Day> Days { get; } = new List<Day>();
+        public List<Day> Days = new List<Day>();
+
+        public IList<Day> GetScheme() => Days;
 
         public void AddDay(Day day) => Days.Add(day);
         public void RemoveDay(Day day) => Days.Remove(day);

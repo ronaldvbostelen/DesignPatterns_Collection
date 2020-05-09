@@ -11,6 +11,6 @@
         <vm:ImageViewModel/>
     </UserControl.DataContext>
     <Grid>
-            <Image Source="{Binding ImageSource}"/>
+            <Image Source="{Binding ImageProxy.Image}"/>
     </Grid>
 </UserControl>

@@ -4,18 +4,18 @@ using System.Text;
 
 namespace AdapterPattern.EnumeratorToIterator
 {
-    class EnumeratorIterator : IIterator<Car>
+    class EnumeratorIterator<T> : IIterator<T>
     {
-        private IEnumerator<Car> enumerator;
+        private IEnumerator<T> enumerator;
 
-        public EnumeratorIterator(IEnumerator<Car> enumerator)
+        public EnumeratorIterator(IEnumerator<T> enumerator)
         {
             this.enumerator = enumerator;
         }
 
         public bool HasNext() => enumerator.MoveNext();
 
-        public Car Next() => enumerator.Current;
+        public T Next() => enumerator.Current;
 
         public void Remove()
         {

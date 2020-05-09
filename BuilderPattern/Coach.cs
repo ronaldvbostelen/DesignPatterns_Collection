@@ -6,7 +6,7 @@ namespace BuilderPattern
 {
     class Coach
     {
-        public FitnessScheme FitnessScheme { get; private set; }
+        public IScheme FitnessScheme { get; private set; }
         private IWorkout workoutBuilder;
         public Coach()
         {

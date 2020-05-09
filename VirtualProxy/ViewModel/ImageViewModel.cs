@@ -6,33 +6,19 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using VirtualProxy.Annotations;
+using VirtualProxy.Model;
 
 namespace VirtualProxy.ViewModel
 {
     public class ImageViewModel : INotifyPropertyChanged
     {
-        private BitmapImage imageSource = new BitmapImage(new Uri("pack://application:,,,/imgs/loading.jpg"));
-        public BitmapImage ImageSource
-        {
-            get => imageSource;
-            set
-            {
-                imageSource = value;
-                OnPropertyChanged();
-            } 
-        }
+        private ImageProxy imageProxy;
+        public ImageProxy ImageProxy  {  get => imageProxy;  set  {  if (value != imageProxy)  {  imageProxy = value;  OnPropertyChanged(); } } }
 
         public ImageViewModel()
         {
-            var btmapDoggo = new BitmapImage(new Uri("https://i.redd.it/s6og1wj07zt41.jpg"));
-            btmapDoggo.DownloadCompleted += BtmapDoggoOnDownloadCompleted;
+            ImageProxy = new ImageProxy(new Uri("https://i.redd.it/s6og1wj07zt41.jpg"));
         }
-
-        private void BtmapDoggoOnDownloadCompleted(object? sender, EventArgs e)
-        {
-            ImageSource = (BitmapImage) sender;
-        }
-
 
         public event PropertyChangedEventHandler PropertyChanged;
 

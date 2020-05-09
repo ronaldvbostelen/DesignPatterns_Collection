@@ -2,7 +2,7 @@
 {
     public class FitnessExercices : IWorkout
     {
-        private FitnessScheme fitnessScheme;
+        private IScheme fitnessScheme;
         private Day currentDay;
 
         public FitnessExercices()
@@ -33,6 +33,6 @@
         public void AddLunge() => currentDay.AddWorkout(new Workout("Lunge"));
 
         public void AddSideBridge() => currentDay.AddWorkout(new Workout("Side Bridge"));
-        public FitnessScheme GetScheme() => fitnessScheme;
+        public IScheme GetScheme() => fitnessScheme;
     }
 }
